@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Miny Book Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body class="body_backround">
+    <button id="logout" onclick="logout()" cllass="glyphicon glyphicon-log-out">log out</button>
+<center>
+    <h1> Welcome To MINY BOOK
+        <sup><img style="width: 50px;"src="http://ilibrary.co.nz/wp-content/uploads/2018/10/kisspng-animation-book-cartoon-illustration-cartoon-books-5aa60f272dcbe3.4843288515208322951876.jpg" ></sup>
+    </h1>
+    <br>
+    <br>
+    <b3> read other people's post or create an room and could post your thoughts</b3>
+    <div class="div_tag">
+        <h4> Create Room</h4>
+        <input type="text" id="create_room" class="form-control" placeholder="room name">
+        <br><br>
+        <button id="room_name" class="btn btm-success" onclick="crate_room()">Create</button>
+
+    </div>
+    <br>
+    <br>
+    <div id="output">
+
+    </div>
+</center>
+</body>  
+</html>
